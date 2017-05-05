@@ -12,21 +12,21 @@ import UIKit
 class FaceView: UIView {
     
     // Public API
+    // 1.0 is full smile and -1.0 is full frown
+    @IBInspectable
+    var scale: CGFloat = 0.9 { didSet { setNeedsDisplay()} }
     
     @IBInspectable
-    var scale: CGFloat = 0.9
+    var eyesOpen: Bool = true { didSet { setNeedsDisplay()} }
     
     @IBInspectable
-    var eyesOpen: Bool = true
+    var lineWidth: CGFloat = 5.0 { didSet { setNeedsDisplay()} }
     
     @IBInspectable
-    var lineWidth: CGFloat = 5.0
+    var color: UIColor = UIColor.blue { didSet { setNeedsDisplay()} }
     
     @IBInspectable
-    var color: UIColor = UIColor.blue
-    
-    @IBInspectable
-    var mouthCurvature: Double = -0.5 // 1.0 is full smile and -1.0 is full frown
+    var mouthCurvature: Double = -0.5 { didSet { setNeedsDisplay()} }
     
     func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
         switch pinchRecognizer.state {
