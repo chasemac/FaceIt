@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmotionsViewController: VCLLoggingViewController {
+class EmotionsViewController: UIViewController {
 
 
     // MARK: - Navigation
