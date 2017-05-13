@@ -98,7 +98,7 @@
                                         <rect key="frame" x="0.0" y="44" width="414" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6C-48-Hl1" id="eBH-xa-X2l">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="189.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-vP-mk1">
@@ -332,6 +332,10 @@
         <scene sceneID="Uka-oP-eEB">
             <objects>
                 <viewController id="XKF-w7-WWf" customClass="BlinkingFaceViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hrg-PQ-tDd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fab-jD-63U"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fL3-E7-LLY">
                         <rect key="frame" x="0.0" y="0.0" width="398" height="182"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
